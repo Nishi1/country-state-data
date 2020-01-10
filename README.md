@@ -1,4 +1,5 @@
 # country-state-data
+```SQL
 CREATE TABLE `countries` (
   `id` bigint(20) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
@@ -15,9 +16,9 @@ CREATE TABLE `states` (
   `alpha2` varchar(255) DEFAULT NULL,
   `country_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
+```
 **Country data**
-
+```SQL
 INSERT INTO `countries` (`id`, `name`, `alpha2`, `alpha3`, `created_at`, `updated_at`) VALUES
 (1, 'French Guiana', 'GF', 'GUF', '2019-11-27 05:47:08', '2019-11-27 05:47:08'),
 (2, 'South Africa', 'ZA', 'ZAF', '2019-11-27 05:47:08', '2019-11-27 05:47:08'),
@@ -5975,3 +5976,4 @@ INSERT INTO `states` (`id`, `name`, `alpha2`, `country_id`) VALUES
 (5696, 'Leeward Islands', 'S', 249),
 (5697, 'Iles Tuamotu-Gambier', 'T', 249),
 (5698, 'Windward Islands', 'V', 249);
+```
