@@ -279,7 +279,7 @@ INSERT INTO `countries` (`id`, `name`, `alpha2`, `alpha3`, `created_at`, `update
 
 
 
-**State Data**
+**State SQL Data**
 ```SQL
 INSERT INTO `states` (`id`, `name`, `alpha2`, `country_id`) VALUES
 (1, 'Eastern Cape', 'EC', 2),
