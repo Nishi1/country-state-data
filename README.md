@@ -1,4 +1,9 @@
 # country-state-data
+
+The goal of this is to add country and state data to database 
+
+## The first step is to create DB tables
+
 ```SQL
 CREATE TABLE `countries` (
   `id` bigint(20) NOT NULL,
