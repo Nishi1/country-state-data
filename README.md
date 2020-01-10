@@ -17,7 +17,8 @@ CREATE TABLE `states` (
   `country_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
-**Country data**
+
+**Country SQL data**
 ```SQL
 INSERT INTO `countries` (`id`, `name`, `alpha2`, `alpha3`, `created_at`, `updated_at`) VALUES
 (1, 'French Guiana', 'GF', 'GUF', '2019-11-27 05:47:08', '2019-11-27 05:47:08'),
@@ -269,11 +270,12 @@ INSERT INTO `countries` (`id`, `name`, `alpha2`, `alpha3`, `created_at`, `update
 (247, 'Svalbard and Jan Mayen', 'SJ', 'SJM', '2019-11-27 05:47:09', '2019-11-27 05:47:09'),
 (248, 'Djibouti', 'DJ', 'DJI', '2019-11-27 05:47:09', '2019-11-27 05:47:09'),
 (249, 'French Polynesia', 'PF', 'PYF', '2019-11-27 05:47:09', '2019-11-27 05:47:09');
+```
 
 
 
 **State Data**
-
+```SQL
 INSERT INTO `states` (`id`, `name`, `alpha2`, `country_id`) VALUES
 (1, 'Eastern Cape', 'EC', 2),
 (2, 'Free', 'FS', 2),
